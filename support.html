@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nurie - こどものぬりえ サポート</title>
+  <style>
+    /* アプリと同じ配色（Nurie/DesignSystem/Theme.swift） */
+    :root { --bg:#E6F2FB; --card:#FFFFFF; --accent:#2F6BFF; --text:#292B3D; --sub:#6B7387; --sun:#FFC83D; }
+    * { box-sizing: border-box; }
+    body {
+      margin:0; background:var(--bg); color:var(--text);
+      font-family:ui-rounded,-apple-system,BlinkMacSystemFont,"Hiragino Maru Gothic ProN","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+      line-height:1.8; -webkit-font-smoothing:antialiased;
+    }
+    .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+    header { text-align:center; padding:24px 0 8px; }
+    .mark { width:88px; height:88px; margin:0 auto; border-radius:22px; background:#5AB8F5;
+      display:flex; align-items:center; justify-content:center; box-shadow:0 6px 18px rgba(41,61,102,0.15); }
+    h1 { font-size:26px; font-weight:800; margin:14px 0 4px; }
+    .lead { color:var(--sub); margin:0; }
+    .card { background:var(--card); border-radius:20px; padding:20px 22px; margin:18px 0;
+      box-shadow:0 4px 14px rgba(41,61,102,0.08); }
+    h2 { font-size:18px; margin:4px 0 12px; color:var(--accent); }
+    .faq { margin:14px 0; }
+    .q { font-weight:700; margin:0 0 4px; }
+    .a { margin:0; color:var(--sub); }
+    a { color:var(--accent); }
+    .contact a { font-weight:700; font-size:18px; }
+    footer { text-align:center; color:var(--sub); font-size:13px; margin-top:28px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark" aria-hidden="true">
+        <svg width="56" height="56" viewBox="0 0 100 100"><path d="M50,8 L61,37 L92,39 L68,59 L76,90 L50,73 L24,90 L32,59 L8,39 L39,37 Z" fill="#FFC83D" stroke="#292B3D" stroke-width="6" stroke-linejoin="round"/></svg>
+      </div>
+      <h1>ぬりえ サポート</h1>
+      <p class="lead">「nurie - こどものぬりえ」のサポートページです。</p>
+    </header>
+
+    <div class="card contact">
+      <h2>お問い合わせ</h2>
+      <p>ご質問・不具合のご報告は、以下のメールアドレスまでお気軽にご連絡ください。数日以内にお返事いたします。</p>
+      <p><a href="mailto:j61382584@gmail.com?subject=nurie%20お問い合わせ">j61382584@gmail.com</a></p>
+      <p style="color:var(--sub);font-size:14px;">不具合のご報告時は、お使いの端末・iOS バージョン・発生した操作を書き添えていただけると助かります。</p>
+    </div>
+
+    <div class="card">
+      <h2>よくある質問</h2>
+
+      <div class="faq">
+        <p class="q">どうやって遊びますか？</p>
+        <p class="a">はじめの画面で絵を選び、「ぬる」「くれよん」「にじいろ」のどれかと色を選んで、指でなぞってください。「はみださない」にしておくと、なぞり始めた線の中だけに色がつきます。「けす」でけせます。まちがえたときは「もどす」（←のボタン）で戻せます。</p>
+      </div>
+
+      <div class="faq">
+        <p class="q">ぬった絵は保存されますか？</p>
+        <p class="a">はい。自動で保存され、次に開いたときに続きからぬれます。同じ絵をもう1枚ぬりたいときは、「できた！」のあとの「あたらしく」を押してください。これまでの作品は、はじめの画面の「アルバム」で見られます。</p>
+      </div>
+
+      <div class="faq">
+        <p class="q">アルバムの作品を消したい</p>
+        <p class="a">アルバムの右上の「かたづける」を押し、消したい作品を選んで「けす」を押してください。消した作品はもとに戻せません。</p>
+      </div>
+
+      <div class="faq">
+        <p class="q">写真アプリに保存するには？</p>
+        <p class="a">「できた！」を押し、「ほぞん」を選ぶと、保護者の方向けの計算問題が出ます。答えを入れると写真アプリに保存されます。はじめて保存するときは、写真への追加の許可をお願いします。</p>
+      </div>
+
+      <div class="faq">
+        <p class="q">遊んでいる途中でアプリが閉じてしまう</p>
+        <p class="a">画面のふちからのスワイプで、ホーム画面に戻ってしまうことがあります。iPhone・iPad の「アクセスガイド」（設定 → アクセシビリティ → アクセスガイド）を使うと、ほかのアプリに移らないようにできます。</p>
+      </div>
+
+      <div class="faq">
+        <p class="q">広告やアプリ内課金はありますか？</p>
+        <p class="a">ありません。情報の収集や送信もしていません。くわしくはプライバシーポリシーをご覧ください。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>関連リンク</h2>
+      <p><a href="./">プライバシーポリシー</a></p>
+    </div>
+
+    <footer>
+      <p>nurie - こどものぬりえ</p>
+    </footer>
+  </div>
+</body>
+</html>
